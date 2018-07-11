@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-# Realize the forehead(front) of your portfolio
+## Realize the forehead(front) of your portfolio
 
 ## Your portfolio has to contain least 3 parts:
 1. About
