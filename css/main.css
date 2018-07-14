@@ -12,7 +12,6 @@
 
 html {
     color: #222;
-    font-size: 1em;
     line-height: 1.4;
 }
 
@@ -136,7 +135,7 @@ body{
   transform: translate(50px,75px) rotate(20deg);
 } */
 
-li{
+/*li{
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
@@ -146,19 +145,25 @@ li:hover{
 
   border-bottom: 5px solid lightgrey;
 
-}
-h2{
-  color: lightgrey
+}*/
+h1{
+  font-size: 2.5em;
 }
 
-nav li a {
+h2{
+  color: white;
+  font-size: 2rem;
+
+}
+
+/*nav li a {
   display: block;
   list-style-type: none;
   font-weight: bold;
   margin: auto;
   color:pink;
   text-decoration: none;
-}
+}*/
 
 
 
@@ -169,12 +174,7 @@ nav li a {
 
 }
 
-.portfolio{
-  background: #f8f8f8;
-  border-bottom: 1px solid #f1f1f1;
-  color:lightgrey;
 
-}
 
 .contact{
   border-bottom: 1px solid #f1f1f1;
@@ -202,13 +202,7 @@ nav li a {
 
   }
 
-  .portfolio{
-    background: url("../img/header3.jpeg");
-    height: 100%;
-    background-size: cover;
-    display: table;
-    top: 0;
-  }
+
 
 
 
@@ -256,10 +250,50 @@ nav li a {
       }
 
 
+      /* Small devices (landscape phones, 576px and up)
+      @media (min-width: 576px) {
 
 
+       }
+
+       Medium devices (tablets, 768px and up)
+      @media (min-width: 768px) {
+          h2{
+            font-size: 2em;
+          }
+          h1{
+            font-size: 3em;
+          }
+      }
+
+       Large devices (desktops, 992px and up)
+      @media (min-width: 992px) { ... }
+
+       Extra large devices (large desktops, 1200px and up)
+      @media (min-width: 1200px) { ... }*/
 
 
+      html {
+        font-size: 1rem;
+      }
+
+      @include media-breakpoint-up(sm) {
+        html {
+          font-size: 1.2rem;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        html {
+          font-size: 1.4rem;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        html {
+          font-size: 2rem;
+        }
+      }
 
 
 
