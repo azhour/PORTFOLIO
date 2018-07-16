@@ -99,77 +99,54 @@ textarea {
 
 body{
   font-family:  Georgia, serif;
-  background: pink;
+  background: #fff;
 }
 
-
+header{
+  background: #d24d57;
+  color: white;
+  font-weight: bold;
+}
 
 .intro1 {
 
-  min-height: 250px;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: url(../img/intro.jpeg) ;
-  background-size: cover;
-  opacity: 0.5;
+  background: #d24d57;
 }
 
 .intro {
   margin: 0 auto;
   text-align: center;
 }
-
-/*.box logo
-{
-  display: inline-block;
-  background:pink;
-  min-width: 50px;
-  min-height: 50px;
-  transition: transform 300ms ease-in-out;
-  pointer-events: none;
-
+.portfolio{
+  min-height: 100vh;
+  background: #f8f8f8;
 }
 
-.container:hover .box{
-  transform: translate(50px,75px) rotate(20deg);
-} */
 
-/*li{
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
+a:hover{
+
+  border-bottom: 5px solid white;
+
 }
-
-li:hover{
-
-  border-bottom: 5px solid lightgrey;
-
-}*/
 h1{
   font-size: 2.5em;
 }
 
-h2{
+.intro h2{
   color: white;
   font-size: 2rem;
 
 }
 
-/*nav li a {
-  display: block;
-  list-style-type: none;
-  font-weight: bold;
-  margin: auto;
-  color:pink;
-  text-decoration: none;
-}*/
-
 
 
 .about [article] {
   border-bottom: 1px solid #f1f1f1;
-  background: pink;
+  background: white;
   color: #fff;
 
 }
@@ -178,27 +155,14 @@ h2{
 
 .contact{
   border-bottom: 1px solid #f1f1f1;
-  background: pink;
-  color: #fff;
+  background: #706f6f;
+  color: black;
+  min-height: 100vh;
 }
 
-
-
-
-/*.container{
-  min-width: 50px;
-  min-height: 50px;
-  border: 10px solid #999;
-  background: url("../img/logo.png");
-  background-size: cover;
-
-}
-
-*/
 
   .about{
-    background: pink;
-
+    background: white;
 
   }
 
@@ -210,7 +174,7 @@ h2{
       .typewriter {
         width: auto;
         overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid pink; /* The typwriter cursor */
+        border-right: .15em solid white; /* The typwriter cursor */
         white-space: nowrap; /* Keeps the content on a single line */
         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
         letter-spacing: .15em; /* Adjust as needed */
@@ -228,21 +192,50 @@ h2{
       /* The typewriter cursor effect */
       @keyframes blink-caret {
         from, to { border-color: transparent }
-        50% { border-color: pink }
+        50% { border-color: white }
+      }
+
+      .hobby{
+        margin: auto;
+      }
+
+      .bounce{
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background: #d24d54;
+      }
+
+      .trapeze1, .trapeze2, .trapeze3, .trapeze4 {
+      width: 100px;
+      height: 100px;
+    border-radius: 100px;
+      border:1px solid #d24d54;
+      margin:10px;
+      }
+
+      .trapeze1{
+        background: url(../img/sport2.jpeg) ;
+        background-size: cover;
+      }
+
+      .trapeze2 {
+      background: url(../img/nature2.jpeg) ;
+      background-size: cover;
       }
 
 
+            .trapeze3 {
+            background: url(../img/teatime.jpeg) ;
+            background-size: cover;
+            }
 
 
+                  .trapeze4 {
+                  background: url(../img/travel.jpeg) ;
+                  background-size: cover;
+                  }
 
-      .trapeze {
-      width: 200px;
-      height: 200px;
-      background: grey;
-      color: white;
-      transform: rotate(45deg);
-      border:1px solid white;
-      }
 
       .trapeze p{
         transform: rotate(-45deg);
@@ -250,7 +243,7 @@ h2{
       }
 
 
-      /* Small devices (landscape phones, 576px and up)
+       Small devices (landscape phones, 576px and up)
       @media (min-width: 576px) {
 
 
@@ -264,35 +257,35 @@ h2{
           h1{
             font-size: 3em;
           }
+          .trapeze1, .trapeze2, .trapeze3, .trapeze4 {
+          width: 150px;
+          height: 150px;
+        border-radius: 150px;
+          border:1px solid #d24d54;
+          margin:10px;
+          }
       }
 
        Large devices (desktops, 992px and up)
       @media (min-width: 992px) { ... }
+      .trapeze1, .trapeze2, .trapeze3, .trapeze4 {
+      width: 200px;
+      height: 200px;
+    border-radius: 200px;
+      border:1px solid #d24d54;
+      margin:10px;
+      }
 
        Extra large devices (large desktops, 1200px and up)
-      @media (min-width: 1200px) { ... }*/
+      @media (min-width: 1200px) { ... }
 
 
-      html {
-        font-size: 1rem;
-      }
-
-      @include media-breakpoint-up(sm) {
-        html {
-          font-size: 1.2rem;
-        }
-      }
-
-      @include media-breakpoint-up(md) {
-        html {
-          font-size: 1.4rem;
-        }
-      }
-
-      @include media-breakpoint-up(lg) {
-        html {
-          font-size: 2rem;
-        }
+      .trapeze1, .trapeze2, .trapeze3, .trapeze4 {
+      width: 250px;
+      height: 250px;
+      border-radius: 250px;
+      border:1px solid #d24d54;
+      margin:10px;
       }
 
 

@@ -22,48 +22,65 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-<header class="intro1">
+
+<header class=" row intro1">
+  <<img src="img/logo.png" alt="logo">
+  <nav class="navbar navbar-expand-lg navbar-light col-12">
+   <a class="navbar-brand" href=""></a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav">
+       <li class="nav-item active">
+         <a class="nav-link" href="#about">A propos <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#portfolio">Portfolio</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#contact">Contact</a>
+       </li>
+     </ul>
+   </div>
+ </nav>
+
   <div class="intro">
-  <h1>Azhour ZOUBIR</h1>
+  <h1>Hello! Moi, c'est Azhour.</h1>
   <div class="typewriter"><h2>Développeuse web</h2></div>
 </div>
 </header>
 
+
 <div class="contain">
-
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img  class="img-fluid"src="img/logo.png" alt="logo"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">A propos <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
 
 <section class="about">
   <div class="about-content">
-    <h2>A propos</h2>
-    <h3>Hello! Je m'appelle Azhour Zoubir.</h3>
-    <p>Je suis une développeuse web passionnée et sensible aux nouvelles technologies.</p>
-    <p class="spinner">Ce que j'aime <span></span><span></span><span></span></p>
-  <div class="trapeze">
-    <h3>J'aime</h3>
+    <h3>Parlons un peu de moi!</h3>
+  <p>Développeuse web installé à Lille, j'ai entamé un virage à 180° en passant du droit au développement web...</p>
+
+<div class="hobby">
+    <h3 class="spinner">Ce que j'aime</h3>
+    <div class="bounce"></div>
+    <div class="bounce"></div>
+    <div class="bounce"></div>
+
+
+  </br>
+<div class="row">
+  <div class="trapeze1">
   </div>
-    <h3>Mes compétences</h3>
+  <div class="trapeze2">
+  </div>
+  <div class="trapeze3">
+  </div>
+  <div class="trapeze4">
+  </div>
+</div>
+</div>
+    <h3>Mes compétences</h3></br>
     <h3>Les technologies que j'utilise:</h3>
-  </div>
+
 </section>
 
 <section class="portfolio">
@@ -72,20 +89,34 @@
 </article>
 </section>
 
-<section class="compétence">
-  <article>
-    <h2>Compétence</h2>
-  </article>
-
-</section>
 
 <section class="contact">
-<article>
-  <h2>Contact</h2>
 
 
-</article>
+      <!--contact info start-->
+      <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
+        <h4>Détails</h4>
+        <p>  Lille, France</p>
+        <p> <a href="mailto:azhour.zoubir@gmail.com">azhour.zoubir@gmail.com</a></p>
+        <p>  <a href="http://azhourzoubir.fr">http://azhourzoubir.fr</a></p>
+      </div>
+      <!--contact info end-->
+      <!--contact form start-->
+      <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 conForm">
+        <h4>Ecrivez-moi!</h4>
+        <div id="message"></div>
+        <form method="post" action="" name="cform" id="cform">
+          <input name="name" id="name" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Votre nom..." type="text">
+          <input name="email" id="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="Votre email..." type="email">
+          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Votre message..."></textarea>
+		      <input id="submit" name="send" class="submitBnt" value="Envoyer le message" type="submit">
+        </form>
+      </div>
+      <!--contact form end-->
+
+
 </section>
+</div>
 </div>
 
 
