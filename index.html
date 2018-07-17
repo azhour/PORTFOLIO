@@ -10,6 +10,8 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" type="image/gif" href="../img/logo3.ico" />
+
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
@@ -22,103 +24,102 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-
-<header class=" row intro1">
-  <<img src="img/logo.png" alt="logo">
+<header class="row">
   <nav class="navbar navbar-expand-lg navbar-light col-12">
-   <a class="navbar-brand" href=""></a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class="collapse navbar-collapse" id="navbarNav">
-     <ul class="navbar-nav">
-       <li class="nav-item active">
-         <a class="nav-link" href="#about">A propos <span class="sr-only">(current)</span></a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="#portfolio">Portfolio</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="#contact">Contact</a>
-       </li>
-     </ul>
-   </div>
- </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src="img/logo3.png" alt="logo"></a>
 
-  <div class="intro">
-  <h1>Hello! Moi, c'est Azhour.</h1>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#Apropos">A propos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#Contact">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="intro"><!-- page of introduction name and post-->
+  <h1>Azhour ZOUBIR</h1>
   <div class="typewriter"><h2>Développeuse web</h2></div>
 </div>
 </header>
 
 
 <div class="contain">
+  <section class="about" id="Apropos">
+    <div class="about-content">
+      <h3>Je suis...</h3>
+    </div>
+      <p>Bonjour, je m'appelle Azhour, je suis développeuse web.</p>
+    <br/>
+      <p>Curieuse, et passionnée par les nouvelles technologies, ma reconversion dans le développement web me permet aujourd'hui d'exprimer ma créativité. </p>
 
-<section class="about">
-  <div class="about-content">
-    <h3>Parlons un peu de moi!</h3>
-  <p>Développeuse web installé à Lille, j'ai entamé un virage à 180° en passant du droit au développement web...</p>
-
-<div class="hobby">
-    <h3 class="spinner">Ce que j'aime</h3>
-    <div class="bounce"></div>
-    <div class="bounce"></div>
-    <div class="bounce"></div>
-
-
-  </br>
-<div class="row">
-  <div class="trapeze1">
-  </div>
-  <div class="trapeze2">
-  </div>
-  <div class="trapeze3">
-  </div>
-  <div class="trapeze4">
-  </div>
-</div>
-</div>
-    <h3>Mes compétences</h3></br>
-    <h3>Les technologies que j'utilise:</h3>
-
-</section>
-
-<section class="portfolio">
-<article>
-  <h2>Portfolio</h2>
-</article>
-</section>
-
-
-<section class="contact">
-
-
-      <!--contact info start-->
-      <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
-        <h4>Détails</h4>
-        <p>  Lille, France</p>
-        <p> <a href="mailto:azhour.zoubir@gmail.com">azhour.zoubir@gmail.com</a></p>
-        <p>  <a href="http://azhourzoubir.fr">http://azhourzoubir.fr</a></p>
+      <div class="hobby">
+        <h5 class="spinner">Ce que j'aime</h5>
+       <br/>
+        <div class="hobby1 row"> <!-- pictures of my favorite pastime -->
+          <div class="circle1 col-xs-6"></div>
+          <div class="circle2 col-xs-6"></div>
+          <div class="circle3 col-xs-6"></div>
+          <div class="circle4 col-xs-6"></div>
+        </div>
       </div>
-      <!--contact info end-->
-      <!--contact form start-->
-      <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 conForm">
-        <h4>Ecrivez-moi!</h4>
-        <div id="message"></div>
-        <form method="post" action="" name="cform" id="cform">
-          <input name="name" id="name" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Votre nom..." type="text">
-          <input name="email" id="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="Votre email..." type="email">
-          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Votre message..."></textarea>
-		      <input id="submit" name="send" class="submitBnt" value="Envoyer le message" type="submit">
-        </form>
-      </div>
-      <!--contact form end-->
+
+      <br/>
+        <h5>Mon parcours</h5><br/>
+        <h5>Mes compétences</h5>
+  </section>
+
+  <section class="portfolio" id="Portfolio">
+      <h4>Portfolio</h4>
+  </section>
 
 
-</section>
+  <section class="contact" id="Contact">
+          <h4>Laissez moi un message!</h4>
+          <form name="sentMessage" id="contactForm" method="post" action="" novalidate=""> <!-- form of contact -->
+                <div class="row control-group">
+                <div class="form-group col-xs-12 col-md-5 controls">
+                      <label for="nom">Votre nom</label>
+                      <input class="form-control" name="nom" id="nom" type="text">
+                </div>
+                <div class="form-group col-xs-12 col-md-5 controls">
+                      <label for="email">Votre Email</label>
+                      <input class="form-control" name="email" id="email"  type="email">
+                </div>
+          </div>
+          <div class="row control-group">
+                <div class="form-group col-xs-12 col-md-5 controls">
+                      <label for="message">Votre message</label>
+                      <textarea rows="5" class="form-control" name="message" id="message"></textarea>
+                </div>
+          </div>
+        </br>
+                <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-10 SendButton">
+                              <button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Envoyer</button>
+                        </div>
+                    </div>
+          </form>
+  </section>
 </div>
-</div>
 
+<footer>
+  <p>Rejoignez moi sur les réseaux sociaux:</p>
+</footer>
 
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

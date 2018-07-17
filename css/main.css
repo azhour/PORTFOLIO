@@ -97,198 +97,161 @@ textarea {
    ========================================================================== */
 
 
-body{
-  font-family:  Georgia, serif;
-  background: #fff;
-}
+   body{
+     font-family:  Georgia, serif;
+     background: #fff;
+   }
 
-header{
-  background: #d24d57;
-  color: white;
-  font-weight: bold;
-}
+   header{
+     background: #d24d57;
+     color: white;
+     font-weight: bold;
+   }
 
-.intro1 {
-
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: #d24d57;
-}
-
-.intro {
-  margin: 0 auto;
-  text-align: center;
-}
-.portfolio{
-  min-height: 100vh;
-  background: #f8f8f8;
-}
-
-
-a:hover{
-
-  border-bottom: 5px solid white;
-
-}
-h1{
-  font-size: 2.5em;
-}
-
-.intro h2{
-  color: white;
-  font-size: 2rem;
-
-}
-
-
-
-.about [article] {
-  border-bottom: 1px solid #f1f1f1;
-  background: white;
-  color: #fff;
-
-}
-
-
-
-.contact{
-  border-bottom: 1px solid #f1f1f1;
-  background: #706f6f;
-  color: black;
-  min-height: 100vh;
-}
-
-
-  .about{
-    background: white;
-
+  .intro{
+    min-height: 100vh;
+    margin: 0 auto;
   }
 
+   .typewriter {
+     width: auto;
+     overflow: hidden; /* Ensures the content is not revealed until the animation */
+     border-right: .15em solid white; /* The typwriter cursor */
+     white-space: nowrap; /* Keeps the content on a single line */
+     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+     letter-spacing: .15em; /* Adjust as needed */
+     animation:
+     typing 3.5s steps(40, end),
+     blink-caret .75s step-end infinite;
+   }
+
+   /* The typing effect */
+   @keyframes typing {
+     from { width: 0 }
+     to { width: 100% }
+   }
+
+   /* The typewriter cursor effect */
+   @keyframes blink-caret {
+     from, to { border-color: transparent }
+     50% { border-color: white }
+   }
+
+    h1{
+      font-size: 1.8em;
+    }
+    h2{
+      font-size: 1.5em;
+    }
+    h3{                    /*je suis...*/
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: bold;
+    }
+    h4{                       /*portfolio and contact */
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: bold;
+      padding-top: 20px;
+    }
+    h5{           /* skills and cv */
+      font-size: 1.3em;
+      color: #CCC;
+    }
+
+   .about-content{
+     width: 182px;
+     height: 84px;
+     background: white;
+     border:1px solid #d24d57;
+     margin: 20px auto;
+     padding-top: 21px;
+     text-align: center;
+   }
+   .about-content:hover{
+     background: #d24d57;
+     color: white;
+     border: 1px solid white;
+   }
+
+   .hobby, .hobby1{
+     margin: auto;
+   }
+   .circle1, .circle2, .circle3, .circle4 { /* size of circle */
+     width: 100px;
+     height: 100px;
+     border-radius: 100px;
+     border:1px solid #d24d54;
+     margin:10px;
+   }
+
+   .circle1{   /* favorite pastime */
+     background: url(../img/sport2.jpeg) ;
+     background-size: cover;
+   }
+
+   .circle2 {
+     background: url(../img/nature2.jpeg) ;
+     background-size: cover;
+   }
 
 
+   .circle3 {
+     background: url(../img/teatime.jpeg) ;
+     background-size: cover;
+   }
 
 
+   .circle4 {
+     background: url(../img/travel.jpeg) ;
+     background-size: cover;
+   }
 
-      .typewriter {
-        width: auto;
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid white; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .15em; /* Adjust as needed */
-        animation:
-          typing 3.5s steps(40, end),
-          blink-caret .75s step-end infinite;
+    p{
+      text-align: center;
+    }
+    .portfolio{
+      min-height: 100vh;
+      background: #f8f8f8;
       }
-
-      /* The typing effect */
-      @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
+      form{
+        margin-top: 20px;
       }
+    footer{
+      background: grey;
+      margin:0 auto;
+    }
+    footer p{
+      color: white;
+      font-weight: bold;
+      margin:0 auto;
+    }
 
-      /* The typewriter cursor effect */
-      @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: white }
-      }
+      /* Media queries */
 
-      .hobby{
-        margin: auto;
-      }
-
-      .bounce{
-        width: 10px;
-        height: 10px;
-        border-radius: 10px;
-        background: #d24d54;
-      }
-
-      .trapeze1, .trapeze2, .trapeze3, .trapeze4 {
-      width: 100px;
-      height: 100px;
-    border-radius: 100px;
-      border:1px solid #d24d54;
-      margin:10px;
-      }
-
-      .trapeze1{
-        background: url(../img/sport2.jpeg) ;
-        background-size: cover;
-      }
-
-      .trapeze2 {
-      background: url(../img/nature2.jpeg) ;
-      background-size: cover;
-      }
-
-
-            .trapeze3 {
-            background: url(../img/teatime.jpeg) ;
-            background-size: cover;
-            }
-
-
-                  .trapeze4 {
-                  background: url(../img/travel.jpeg) ;
-                  background-size: cover;
-                  }
-
-
-      .trapeze p{
-        transform: rotate(-45deg);
-
-      }
-
-
-       Small devices (landscape phones, 576px and up)
+      /* Small devices (landscape phones, 576px and up)*/
       @media (min-width: 576px) {
-
+        .hobby1{
+          justify-content: center;
+        }
 
        }
 
-       Medium devices (tablets, 768px and up)
+      /* Medium devices (tablets, 768px and up)*/
       @media (min-width: 768px) {
-          h2{
-            font-size: 2em;
-          }
-          h1{
-            font-size: 3em;
-          }
-          .trapeze1, .trapeze2, .trapeze3, .trapeze4 {
-          width: 150px;
-          height: 150px;
-        border-radius: 150px;
-          border:1px solid #d24d54;
-          margin:10px;
-          }
+      body{
+        margin-left: 10px;
       }
 
-       Large devices (desktops, 992px and up)
-      @media (min-width: 992px) { ... }
-      .trapeze1, .trapeze2, .trapeze3, .trapeze4 {
-      width: 200px;
-      height: 200px;
-    border-radius: 200px;
-      border:1px solid #d24d54;
-      margin:10px;
       }
 
-       Extra large devices (large desktops, 1200px and up)
-      @media (min-width: 1200px) { ... }
+      /* Large devices (desktops, 992px and up)*/
+      @media (min-width: 992px) {
 
-
-      .trapeze1, .trapeze2, .trapeze3, .trapeze4 {
-      width: 250px;
-      height: 250px;
-      border-radius: 250px;
-      border:1px solid #d24d54;
-      margin:10px;
       }
 
-
+       /*Extra large devices (large desktops, 1200px and up)*/
+      @media (min-width: 1200px) {
 
 
 
