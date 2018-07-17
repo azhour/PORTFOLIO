@@ -176,6 +176,7 @@ textarea {
 
    .hobby, .hobby1{
      margin: auto;
+     justify-content: center;
    }
    .circle1, .circle2, .circle3, .circle4 { /* size of circle */
      width: 100px;
@@ -242,7 +243,13 @@ textarea {
       body{
         margin-left: 10px;
       }
-
+      h1{
+        font-size: 2em;
+      }
+      h2{
+        font-size: 1.8em;
+      }
+      
       }
 
       /* Large devices (desktops, 992px and up)*/
